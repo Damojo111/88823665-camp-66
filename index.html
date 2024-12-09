@@ -1,115 +1,89 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Workshop#HTML-Form</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="Testcolor.css">
 </head>
-
 <body>
+    <h1>Workshop#HTML-Form</h1>
+
     <form>
-        <h1>Workshop#HTML - FROM </h1>
         <table>
             <tr>
                 <td>ชื่อ</td>
-                <td><input type="text Name" id="Name" name="Name"></td>
+                <td><input type="text" id="Name" name="Name" placeholder="กรอกชื่อ"></td>
             </tr>
-        
-
             <tr>
-                <td><label for="Surname">สกุล</label></td>
-                <td><input type="text Surname" id="Surname" lastname="Surname"></td>
-
-                
+                <td>สกุล</td>
+                <td><input type="text" id="Surname" name="Surname" placeholder="กรอกนามสกุล"></td>
             </tr>
-
             <tr>
-            <td>วัน/เดือน/ปีเกิด</td>
-            <td><input type="date"></td>
-            
+                <td>วัน/เดือน/ปีเกิด</td>
+                <td><input type="date"></td>
             </tr>
-            
-            
             <tr>
                 <td>อายุ</td>
-                <td><input type="number" id="age" name="age" min="1"></td>
-                
+                <td><input type="number" id="age" name="age" min="1" placeholder="ระบุอายุ"></td>
             </tr>
-        
             <tr>
-                <td>เพศ </td>
+                <td>เพศ</td>
                 <td>
-                <input type="radio" id="male" name="gender" value="male">
-                ชาย
-                <input type="radio" id="female" name="gender" value="female">
-                หญิง
-            </td>
-
+                    <input type="radio" id="male" name="gender" value="male"> ชาย
+                    <input type="radio" id="female" name="gender" value="female"> หญิง
+                </td>
             </tr>
-
             <tr>
                 <td>รูป</td>
-                <td> <input type="file" id="photo" name="photo" accept="image/*"></td>
+                <td><input type="file" id="photo" name="photo" accept="image/*"></td>
             </tr>
-
             <tr>
                 <td>ที่อยู่</td>
-                <td><textarea id="address" name="address" rows="4" cols="50"></textarea></td>
+                <td><textarea id="address" name="address" rows="4" placeholder="กรอกที่อยู่"></textarea></td>
             </tr>
-           
             <tr>
-                <td> <label for="color">สีที่ชอบ:</label></td>
+                <td>สีที่ชอบ</td>
                 <td>
                     <select id="color" name="color">
                         <option value="red">สีแดง</option>
                         <option value="blue">สีน้ำเงิน</option>
                         <option value="green">สีเขียว</option>
                         <option value="yellow">สีเหลือง</option>
-                    </select> 
+                    </select>
                 </td>
             </tr>
-
             <tr>
-                <td> <label>แนวเพลงที่ชอบ:</label></td>
+                <td>แนวเพลงที่ชอบ</td>
                 <td>
-                    <input type="checkbox" id="life" name="music" value="life">
-            <label for="life">เพื่อชีวิต</label>
-            <input type="checkbox" id="pop" name="music" value="pop">
-            <label for="pop">ลูกทุ่ง</label>
-            <input type="checkbox" id="rock" value="rock">
-            <label for="rock">เพลงตามกระแส</label>
-            <input type="checkbox" id="other" name="music" value="other">
-            <label for="other">อื่นๆ</label>
+                    <input type="checkbox" id="life" name="music" value="life"> เพื่อชีวิต
+                    <input type="checkbox" id="pop" name="music" value="pop"> ลูกทุ่ง
+                    <input type="checkbox" id="city" value="city"> ลูกกรุง
+                    <input type="checkbox" id="E-cuntry" value="E-cuntry"> อีสาน
+                    <input type="checkbox" id="other" name="music" value="other"> อื่นๆ
                 </td>
             </tr>
-
             <tr>
                 <td>กีฬาที่ชอบ</td>
                 <td>
-                    <input type="checkbox" id="football" name="sport" value="football">
-                    ฟุตบอล
-                    <input type="checkbox" id="swim" name="sport" value="swim">
-                    ว่ายน้ำ
-                    <input type="checkbox" id="basket ball" name="sport" value="basket ball">
-                    บาส
-                    <input type="checkbox" id="other" name="music" value="other">
-                    อื่นๆ
+                    <input type="checkbox" id="football" name="sport" value="football"> ฟุตบอล
+                    <input type="checkbox" id="swim" name="sport" value="swim"> ว่ายน้ำ
+                    <input type="checkbox" id="bassball" name="sport" value="bassball"> เบสบอล
+                    <input type="checkbox" id="basketball" name="sport" value="basketball"> บาส
+                    <input type="checkbox" id="sport-other" name="sport" value="other"> อื่นๆ
                 </td>
             </tr>
-
             <tr>
-                <td><input type="checkbox" id="consent" name="consent">
-                ยินยอมให้เก็บข้อมูล</td>
+                <td><input type="checkbox" id="consent" name="consent"> ยินยอมให้เก็บข้อมูล</td>
             </tr>
-            
             <tr>
                 <td><button type="reset">Reset</button></td>
-                   <td> <button type="submit">Submit</button></td>
+                <td><button type="submit">Submit</button></td>
             </tr>
-
-
-
         </table>
     </form>
 </body>
-
 </html>
