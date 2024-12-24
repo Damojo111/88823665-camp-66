@@ -7,81 +7,122 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Sofia&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Link to External CSS -->
-    <link rel="stylesheet" href="Testcolor.css">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <style>
+        body{
+            background-color: rgb(117, 187, 241);
+        }
+    </style>
 </head>
 <body>
-    <h1>Workshop#HTML-Form</h1>
+    <div class ="container mt-3 px-5">
+        <form>
+            <div class ="mb-3 row">
+                <label for="frame" class="col-sm-3 col-from-label"> ชื่อ <span class="text-danger">*</span></label>
+            <div class="col-sm-9">
+                <input class="form-control" type="text" id="fname" placeholder="ชื่อ" required>
+            </div>
+        </div>
 
-    <form>
-        <table>
-            <tr>
-                <td>ชื่อ</td>
-                <td><input type="text" id="Name" name="Name" placeholder="กรอกชื่อ"></td>
-            </tr>
-            <tr>
-                <td>สกุล</td>
-                <td><input type="text" id="Surname" name="Surname" placeholder="กรอกนามสกุล"></td>
-            </tr>
-            <tr>
-                <td>วัน/เดือน/ปีเกิด</td>
-                <td><input type="date"></td>
-            </tr>
-            <tr>
-                <td>อายุ</td>
-                <td><input type="number" id="age" name="age" min="1" placeholder="ระบุอายุ"></td>
-            </tr>
-            <tr>
-                <td>เพศ</td>
-                <td>
-                    <input type="radio" id="male" name="gender" value="male"> ชาย
-                    <input type="radio" id="female" name="gender" value="female"> หญิง
-                </td>
-            </tr>
-            <tr>
-                <td>รูป</td>
-                <td><input type="file" id="photo" name="photo" accept="image/*"></td>
-            </tr>
-            <tr>
-                <td>ที่อยู่</td>
-                <td><textarea id="address" name="address" rows="4" placeholder="กรอกที่อยู่"></textarea></td>
-            </tr>
-            <tr>
-                <td>สีที่ชอบ</td>
-                <td>
-                    <select id="color" name="color">
-                        <option value="red">สีแดง</option>
-                        <option value="blue">สีน้ำเงิน</option>
-                        <option value="green">สีเขียว</option>
-                        <option value="yellow">สีเหลือง</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>แนวเพลงที่ชอบ</td>
-                <td><input type="radio" id="life" name="music" value="life"> เพื่อชีวิต<input type="radio" id="pop" name="music" value="pop"> ลูกทุ่ง<input type="radio" id="city" value="city"> ลูกกรุง<input type="radio" id="E-cuntry" value="E-cuntry"> อีสาน
-                    <input type="radio" id="other" name="music" value="other"> อื่นๆ
-                </td>
-            </tr>
-            <tr>
-                <td>กีฬาที่ชอบ</td>
-                <td>
-                    <input type="radio" id="football" name="sport" value="football"> ฟุตบอล
-                    <input type="radio" id="swim" name="sport" value="swim"> ว่ายน้ำ
-                    <input type="radio" id="bassball" name="sport" value="bassball"> เบสบอล
-                    <input type="radio" id="basketball" name="sport" value="basketball"> บาส
-                    <input type="radio" id="sport-other" name="sport" value="other"> อื่นๆ
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" style="text-align: center;">
-                    <input type="checkbox" id="consent" name="consent"> ยินยอมให้เก็บข้อมูล
-                </td>
-            </tr>
-            <tr>
-                <td><button type="reset">Reset</button></td>
-                <td><button type="submit">Submit</button></td>
-            </tr>
-        </table>
-    </form>
+             <div class ="mb-3 row">
+                <label for="lastname" class="col-sm-3 col-from-label"> สกุล </label>
+            <div class="col-sm-9">
+                <input class="form-control" type="text" id="fname" placeholder="สกุล" required>
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="birthdate" class="col-sm-3 col-form-label">วัน/เดือน/ปีเกิด</label>
+            <div class="col-sm-9">
+                <input type="date" class="form-control" id="birthdate">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="age" class="col-sm-3 col-form-label">อายุ</label>
+            <div class="col-sm-9">
+                <input type="number" class="form-control" id="age" placeholder="อายุ">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">เพศ</label>
+            <div class="col-sm-9">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                    <label class="form-check-label" for="male">ชาย</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                    <label class="form-check-label" for="female">หญิง</label>
+                </div>
+            </div>
+        </div>
+      
+            <div class="mb-3 row">
+                <label for="profilePicture" class="col-sm-3 col-form-label">รูป</label>
+                <div class="col-sm-9">
+                    <input type="file" class="form-control" id="profilePicture">
+                </div>
+            </div>
+
+
+            <div class="mb-3 row">
+                <label for="address" class="col-sm-3 col-form-label">ที่อยู่</label>
+                <div class="col-sm-9">
+                    <textarea class="form-control" id="address" rows="3" placeholder="ที่อยู่"></textarea>
+                </div>
+            </div>
+
+       <div class="mb-3 row">
+        <label for="favoriteColor" class="col-sm-3 col-form-label">สีที่ชอบ</label>
+        <div class="col-sm-9">
+            <select class="form-select" id="favoriteColor">
+                <option value="red">สีแดง</option>
+                <option value="blue">สีน้ำเงิน</option>
+                <option value="green">สีเขียว</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <label for="favoriteSong" class="col-sm-3 col-form-label">เพลงที่ชอบ</label>
+        <div class="col-sm-9">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                <label class="form-check-label" for="male">ลูกทุ่ง</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                <label class="form-check-label" for="female">เพื่อชีวิต</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                <label class="form-check-label" for="female">อื่นๆ</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="agree">
+                <label class="form-check-label" for="agree">ยินยอมให้เก็บข้อมูล</label>
+            </div>
+        </div>
+    </div>            
+
+    <div class="mb-3 row">
+        <div class="col-sm-11 ">
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+            <div class="col-sm-1 ">   
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </div>
+    
+
+        </form>
+    </div>
 </body>
 </html>
